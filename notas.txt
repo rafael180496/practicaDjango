@@ -1,0 +1,84 @@
+
+antes a ver intalado django en pip
+-----------------------
+crear un proyecto en django
+
+django-admin startproject nombre
+
+
+setting.py configuracion del proyecto
+urls.py  ruteo del proyecto
+
+wsgi.py para montar a servidores
+
+
+
+servidor  de prueba
+
+python manage.py runserver    ///correr servidor
+python manage.py migrate  //migrar base de datos
+python manage.py startapp nombre ///crear un app
+--------------------------------------------
+python manage.py makemigrations appnombre //migrar modelos
+despues
+python manage.py migrate appnombre //despues de migrar los archivos
+----------------------------------------
+crear super usario
+python manage.py createsuperuser
+--------------------------
+
+app en django
+
+crear un directorio template en la app
+dentro de ella con el nombre de la app
+
+intalar app
+añadirla seeting
+'core',
+
+
+---------------------------------
+{% block content %}
+      
+    {% endblock content %}
+
+-----------------------------------
+
+{% extends "core/base.html" %} 
+-----------------------------------
+--------------------------------
+cargar ficheros static
+{%  load static %}
+
+
+
+-------------------------------------
+portafolio
+
+administracion de imagenes en django
+pip install Pillow
+
+---------------------------------
+donde dice admin del app modificar
+colocar el modelo
+admin.site.register(modelo)
+
+--------------------------------------------
+manejo de url avansado con url independientes
+cada app tener una urls.py
+
+path('',include('core.urls')),
+----------------------------------
+procesador de contexto
+processors.py
+---------------------------------
+
+editor de word en django
+pip install django-ckeditor
+pip install django
+pip install Pillow
+pip install autopep8
+pip install pylint-django
+
+-para enviar mensaje
+https://mailtrap.io/
